@@ -125,6 +125,29 @@ describe('AppService', () => {
         'Zip code outside the delivery area for this method',
       )
     })
+
+    it('should return a valid output validation', () => {
+      const role = {
+        name: 'Retirada em loja',
+        active: true,
+        min_price_in_cents: 1,
+        range_postcode_valid: ['00000000', '99999999'],
+      }
+
+      const data = { orderPrice: 3000, zipcode: '03108010' } as FormDataDTO
+
+      const expected = {
+        incompatibilities: [],
+        method: 'Retirada em loja',
+        valid: true,
+      }
+
+      const result = appService.createOutputByRole(role, data)
+
+      expect(result).toStrictEqual(expected)
+      expect(result.valid).toBeTruthy()
+      expect(result.incompatibilities.length).toBe(0)
+    })
   })
 
   describe('validateZipCode', () => {
