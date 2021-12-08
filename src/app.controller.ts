@@ -7,7 +7,7 @@ import {
 } from '@nestjs/common'
 import { FileInterceptor } from '@nestjs/platform-express'
 import { ApiBody, ApiConsumes } from '@nestjs/swagger'
-import { AppService } from './app.service'
+import { AppService, OutputValidation } from './app.service'
 import { FormDataDTO } from './FormDataDTO'
 
 @Controller('zipcodeValidator')
@@ -33,7 +33,7 @@ export class AppController {
   validateZipCode(
     @UploadedFile() roles: Express.Multer.File,
     @Body() body: FormDataDTO,
-  ): any {
+  ): OutputValidation[] {
     return this.appService.validateZipCode(roles, body)
   }
 }
