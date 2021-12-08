@@ -1,6 +1,8 @@
 import {
   Body,
   Controller,
+  HttpException,
+  HttpStatus,
   Post,
   UploadedFile,
   UseInterceptors
@@ -34,6 +36,12 @@ export class AppController {
     @UploadedFile() roles: Express.Multer.File,
     @Body() body: FormDataDTO,
   ): OutputValidation[] {
+    if (!roles) {
+      throw new HttpException(
+        'Roles file cannot be empty',
+        HttpStatus.BAD_REQUEST,
+      )
+    }
     return this.appService.validateZipCode(roles, body)
   }
 }
