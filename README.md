@@ -30,7 +30,7 @@ Nest utiliza o typescript como linguagem base, e isso nos ajuda no validação d
 
 ## Using
 
-Para utilizar o api localmente:
+Para utilizar a API localmente:
 
 faça uma requisição do tipo post para <http://localhost:3000/zipcodeValidator/validate>
 passando um FormData com.
