@@ -8,7 +8,7 @@ async function bootstrap() {
   const config = new DocumentBuilder()
     .setTitle('Zipcode validator')
     .setDescription(
-      'Zipcode validator API to verify the zipcode and price orders',
+      'Zipcode validator API to verify the zipcode and price from clients` orders',
     )
     .setVersion('1.0')
     .addTag('zipcodeValidator')

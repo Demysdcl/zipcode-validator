@@ -41,6 +41,10 @@ passando um FormData com.
 
 Se você utiliza o **Postman** pode importar o arquivo: **zipcode_validator.postman_collection.json** na raiz do projeto
 
+## Documentation
+
+Acesse <http://localhost:3000/docs> para verificar a documentação da API
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
