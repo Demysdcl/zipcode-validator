@@ -42,6 +42,13 @@ export class AppController {
         HttpStatus.BAD_REQUEST,
       )
     }
+    console.log(roles)
+    if (!roles.originalname.includes('json')) {
+      throw new HttpException(
+        'Roles file should be a JSON',
+        HttpStatus.BAD_REQUEST,
+      )
+    }
     return this.appService.validateZipCode(roles, body)
   }
 }
