@@ -28,6 +28,17 @@ Escolhi o Nest Framework por ele ter uma estrutura consolidada e pronta da utili
 
 Nest utiliza o typescript como linguagem base, e isso nos ajuda no validação dos tipos e provê uma ótima integração com o VSCode
 
+## Using
+
+Para utilizar o api localmente:
+
+faça uma requisição do tipo post para <http://localhost:3000/zipcodeValidator/validate>
+passando um FormData com.
+
+- zipcode: cep para verificação
+- orderPrice: valor do pedido
+- roles: arquivo do tipo JSON com as regras de validação
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
