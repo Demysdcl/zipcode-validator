@@ -36,19 +36,23 @@ export class AppController {
     @UploadedFile() roles: Express.Multer.File,
     @Body() body: FormDataDTO,
   ): OutputValidation[] {
+    this.validateFile(roles)
+    return this.appService.validateZipCode(roles, body)
+  }
+
+  validateFile(roles: Express.Multer.File) {
     if (!roles) {
       throw new HttpException(
         'Roles file cannot be empty',
         HttpStatus.BAD_REQUEST,
       )
     }
-    console.log(roles)
+
     if (!roles.originalname.includes('json')) {
       throw new HttpException(
         'Roles file should be a JSON',
         HttpStatus.BAD_REQUEST,
       )
     }
-    return this.appService.validateZipCode(roles, body)
   }
 }
