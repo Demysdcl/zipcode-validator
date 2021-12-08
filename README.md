@@ -39,7 +39,7 @@ passando um FormData com.
 - orderPrice: valor do pedido
 - roles: arquivo do tipo JSON com as regras de validação
 
-Se você utiliza o postman pode importar o arquivo: zipcode_validator.postman_collection.json na raiz do projeto
+Se você utiliza o **Postman** pode importar o arquivo: **zipcode_validator.postman_collection.json** na raiz do projeto
 
 ## Description
 
