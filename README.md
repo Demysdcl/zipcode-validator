@@ -24,7 +24,9 @@
 
 ## Explanation
 
-Escolhi o Nest Framework por ele ter uma estrutura consolidada e pronta da utilização após a criação do projeto com o seu boilerplate
+Escolhi o Nest Framework por ele ter uma estrutura consolidada e pronta da utilização após a criação do projeto com o seu boilerplate,
+
+Nest utiliza o typescript como linguagem base, e isso nos ajuda no validação dos tipos e provê uma ótima integração com o VSCode
 
 ## Description
 
