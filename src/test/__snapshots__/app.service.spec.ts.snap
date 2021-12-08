@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppService validateZipCode should match process with snapshot 1`] = `
+Array [
+  Object {
+    "incompatibilities": Array [],
+    "method": "Entrega normal SP",
+    "valid": true,
+  },
+  Object {
+    "incompatibilities": Array [
+      "Minimum price not reached for this method",
+    ],
+    "method": "Entrega normal SP (frete grátis)",
+    "valid": false,
+  },
+  Object {
+    "incompatibilities": Array [
+      "Minimum price not reached for this method",
+      "Zip code outside the delivery area for this method",
+    ],
+    "method": "Entrega normal RJ",
+    "valid": false,
+  },
+  Object {
+    "incompatibilities": Array [
+      "Minimum price not reached for this method",
+      "Zip code outside the delivery area for this method",
+    ],
+    "method": "Entrega normal RJ (expressa)",
+    "valid": false,
+  },
+  Object {
+    "incompatibilities": Array [
+      "Minimum price not reached for this method",
+    ],
+    "method": "Entrega normal BR",
+    "valid": false,
+  },
+  Object {
+    "incompatibilities": Array [
+      "Minimum price not reached for this method",
+    ],
+    "method": "Entrega normal agendada SP",
+    "valid": false,
+  },
+  Object {
+    "incompatibilities": Array [],
+    "method": "Retirada em loja",
+    "valid": true,
+  },
+  Object {
+    "incompatibilities": Array [
+      "Disabled shipping",
+    ],
+    "method": "Retirada em loja agendada",
+    "valid": false,
+  },
+]
+`;

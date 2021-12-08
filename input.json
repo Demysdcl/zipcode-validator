@@ -1,0 +1,10 @@
+[
+    {"name": "Entrega normal SP", "active": true, "min_price_in_cents": 1, "range_postcode_valid": ["01000000", "19999999"]},
+    {"name": "Entrega normal SP (frete grátis)", "active": true, "min_price_in_cents": 10000, "range_postcode_valid": ["01000000", "19999999"]},
+    {"name": "Entrega normal RJ", "active": true, "min_price_in_cents": 4500, "range_postcode_valid": ["20000000", "26600999"]},
+    {"name": "Entrega normal RJ (expressa)", "active": true, "min_price_in_cents": 29900, "range_postcode_valid": ["20000000", "26600999"]},
+    {"name": "Entrega normal BR", "active": true, "min_price_in_cents": 5000, "range_postcode_valid": ["00000000", "99999999"]},
+    {"name": "Entrega normal agendada SP", "active": true, "min_price_in_cents": 10000, "range_postcode_valid": ["01000000", "19999999"]},
+    {"name": "Retirada em loja", "active": true, "min_price_in_cents": 1, "range_postcode_valid": ["00000000", "99999999"]},
+    {"name": "Retirada em loja agendada", "active": false, "min_price_in_cents": 1, "range_postcode_valid": ["00000000", "99999999"]}
+]

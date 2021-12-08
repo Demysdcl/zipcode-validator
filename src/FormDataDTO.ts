@@ -1,4 +1,4 @@
 export class FormDataDTO {
-  zipCode: string;
-  orderPrice: number;
+  zipcode: string
+  orderPrice: number
 }

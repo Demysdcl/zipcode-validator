@@ -4,10 +4,10 @@ import {
   Post,
   UploadedFile,
   UseInterceptors
-} from '@nestjs/common';
-import { FileInterceptor } from '@nestjs/platform-express';
-import { AppService } from './app.service';
-import { FormDataDTO } from './FormDataDTO';
+} from '@nestjs/common'
+import { FileInterceptor } from '@nestjs/platform-express'
+import { AppService } from './app.service'
+import { FormDataDTO } from './FormDataDTO'
 
 @Controller('zipcodeValidator')
 export class AppController {
@@ -19,6 +19,6 @@ export class AppController {
     @UploadedFile() roles: Express.Multer.File,
     @Body() body: FormDataDTO,
   ): any {
-    return this.appService.validateZipCode(roles, body);
+    return this.appService.validateZipCode(roles, body)
   }
 }
