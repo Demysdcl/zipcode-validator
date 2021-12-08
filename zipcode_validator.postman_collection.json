@@ -1,0 +1,44 @@
+{
+	"variables": [],
+	"info": {
+		"name": "zipcode_validator",
+		"_postman_id": "4a308906-8055-8996-a68c-e4b043861bdb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/zipcodeValidator/validate",
+			"request": {
+				"url": "http://localhost:3000/zipcodeValidator/validate",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "zipcode",
+							"value": "03108010",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "orderPrice",
+							"value": "4800",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "roles",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
