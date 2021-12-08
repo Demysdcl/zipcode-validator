@@ -32,7 +32,7 @@ Nest utiliza o typescript como linguagem base, e isso nos ajuda no validação d
 
 Para utilizar a API localmente:
 
-faça uma requisição do tipo post para <http://localhost:3000/zipcodeValidator/validate>
+faça uma requisição do tipo POST para <http://localhost:3000/zipcodeValidator/validate>
 passando um FormData com.
 
 - zipcode: cep para verificação
